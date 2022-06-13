@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  height: 90px;
+}
+
+nav a.navbar-brand {
+  padding: 0;
+  position: relative;
+  margin-left: 10px;
+  width: 121px;
+  height: 68px;
+  overflow: hidden;
+}
+
+nav a.navbar-brand .logo {
+  position: relative;
+  display: block;
+  float: left;
+  height: 100%;
+  width: 50%;
+  z-index: 2;
+  transition: all 1s linear;
+}
+
+nav a.navbar-brand #logo-name {
+  position: absolute;
+  top: 0;
+  text-align: center;
+  line-height: 68px;
+  width: 100%;
+  height: 400%;
+}
+
+nav a.navbar-brand #logo-name div:nth-child(n+1)::first-letter {
+  font-size: xx-large;
+  font-weight: 900;
+}
+
+nav a.navbar-brand #logo-name div:first-of-type {
+  font-size: xx-large;
+  font-weight: 900;
+  letter-spacing: 3px;
+}
+
+nav a.navbar-brand #logo-name div {
+  width: 100%;
+  height: 25%;
+}
+
+nav a.navbar-brand .logo {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  background-color: black;
+}
+
+nav a.navbar-brand .logo:first-of-type {
+  background-image: url(images/araba_arka.png);
+}
+
+nav a.navbar-brand .logo:last-of-type {
+  background-image: url(images/araba-on.png);
+}
+
+nav a.navbar-brand:hover .logo:first-of-type {
+  transform: translateX(-105%);
+}
+
+nav a.navbar-brand:hover .logo:last-of-type {
+  transform: translateX(100%);
+}
+
+nav a.navbar-brand:hover #logo-name {
+  animation-name: hareketliyazi;
+  animation-timing-function: linear;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  animation-delay: 1s;
+
+}
+
+nav ul li {
+  box-sizing: border-box;
+  font-size: large;
+  font-weight: 600;
+  background: linear-gradient(to right, yellow, red);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+}
+
+nav ul:first-of-type li {
+  border-bottom: 1px solid transparent;
+  transition: all .7s ease;
+}
+
+nav ul:first-of-type li:hover {
+  border-bottom: 1px solid white;
+}
+
+nav ul:last-of-type li {
+  border: 1px solid transparent;
+  transition: all .5 ease;
+  border-radius: 15px;
+}
+
+nav ul:last-of-type li:hover {
+  border: 1px solid rgb(165, 164, 164);
+}
+
+@keyframes hareketliyazi {
+  0% {
+      top: 0;
+  }
+
+  50% {
+      top: -204px;
+  }
+
+  100% {
+      top: 0;
+  }
+}
+
+nav button {
+  margin-right: 10px;
+}
+
+ul:first-of-type {
+  width: 80%;
+}
+
+ul li {
+  margin: 0 20px;
+}

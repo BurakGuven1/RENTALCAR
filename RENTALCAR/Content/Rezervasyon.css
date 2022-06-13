@@ -1,0 +1,36 @@
+﻿*, *::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-image: url(a.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    padding: 1.5rem 0;
+    filter: blur(0.8);
+}
+
+#datepicker {
+    margin: 0 auto;
+    max-width: 600px;
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.container {
+    width: calc(100% - 6rem);
+    min-height: 200px;
+    margin: 0 3rem;
+    background-color: red;
+}
